@@ -26,8 +26,8 @@ const Hero = () => {
         <h1 className="w-4/8 text-4xl md:text-6xl text-main-light-green mb-5 font-semibold text-center">
           Are You Ready To Start Your Journey?
         </h1>
-        <p className='text-primary-white text-left w-4/8 mx-auto'>
-          At Brave Guidance our mission to is treat different mental blocks that you may be going through. From depression, aniexty and other disorders, we are here to bring a more holisitc solution to your needs. If you are ready to take the first step click the button below:
+        <p className='text-primary-white text-left w-4/8 mx-auto my-5'>
+          At Brave Guidance our mission to is works through a holistic approach to strengthen your awareness and provide insight into your journey of change and growth. Her primary goal is to ensure a safe environment for you to be heard and feel understood without fear or judgment.
         </p>
 
         <button className='bg-black text-white w-1/8 p-3 rounded-4xl hover:bg-white  hover:text-black transition duration-300'>Start Now!</button>
