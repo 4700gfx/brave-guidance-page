@@ -27,7 +27,7 @@ const Hero = () => {
           Are You Ready to Begin Your Journey?
         </h1>
 
-        <p className="text-primary-white text-left max-w-2xl text-sm md:text-md font-light leading-relaxed">
+        <p className="text-primary-white text-left max-w-2xl text-md md:text-md font-light leading-relaxed">
           At Brave Guidance, we believe healing begins with connection. Through a holistic and compassionate approach,
           we help you strengthen self-awareness, embrace change, and move forward with clarity. Here, you're heard,
           supported, and encouraged—without fear or judgment—every step of the way.
