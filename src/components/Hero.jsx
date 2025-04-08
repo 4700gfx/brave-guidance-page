@@ -18,19 +18,24 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Dark overlay to dim video */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-10"></div>
+      {/* Overlay */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10" />
 
-      {/* Overlay content */}
-      <div className="relative z-20 flex flex-col justify-center items-center h-full px-6">
-        <h1 className="w-4/8 text-4xl md:text-6xl text-main-light-green mb-5 font-semibold text-center">
-          Are You Ready To Start Your Journey?
+      {/* Content */}
+      <div className="relative z-20 flex flex-col justify-center items-center h-full px-6 text-center">
+        <h1 className="text-3xl md:text-6xl font-bold text-main-light-green mb-4 max-w-3xl leading-tight">
+          Are You Ready to Begin Your Journey?
         </h1>
-        <p className='text-primary-white text-left w-4/8 mx-auto my-5'>
-          At Brave Guidance our mission to is works through a holistic approach to strengthen your awareness and provide insight into your journey of change and growth. Her primary goal is to ensure a safe environment for you to be heard and feel understood without fear or judgment.
+
+        <p className="text-primary-white text-left max-w-2xl text-sm md:text-md font-light leading-relaxed">
+          At Brave Guidance, we believe healing begins with connection. Through a holistic and compassionate approach,
+          we help you strengthen self-awareness, embrace change, and move forward with clarity. Here, you're heard,
+          supported, and encouraged—without fear or judgment—every step of the way.
         </p>
 
-        <button className='bg-black text-white w-1/8 p-3 rounded-4xl hover:bg-white  hover:text-black transition duration-300'>Start Now!</button>
+        <button className="mt-6 bg-black text-white px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:bg-white hover:text-black hover:shadow-md">
+          Start Now
+        </button>
       </div>
     </section>
   );

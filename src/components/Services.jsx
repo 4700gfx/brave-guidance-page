@@ -7,19 +7,40 @@ const Services = () => {
       service: 'Depression',
       infomation:
         'Depression is the number one cause of suicide in America. At Brave Guidance, we recognize how isolating and painful it can feel. Our approach focuses on building emotional awareness, re-establishing connection with self and others, and introducing practical tools for everyday healing. We work closely with clients to identify root causes and develop sustainable habits that promote long-term mental wellness.',
-      tags: ['#emotional-awareness', '#connection', '#mental-health'],
+      tags: [
+        '#emotional-awareness',
+        '#connection',
+        '#mental-health',
+        '#healing-journey',
+        '#self-care',
+        '#support',
+      ],
     },
     {
       service: 'Anxiety',
       infomation:
         'Anxiety can be overwhelming, often manifesting as restlessness, racing thoughts, and physical tension. Brave Guidance offers structured, supportive care to help individuals break the cycle of fear and avoidance. Through mindfulness techniques, cognitive behavioral tools, and personalized guidance, we help clients understand the underlying patterns of anxiety and empower them to reclaim a sense of calm, control, and confidence.',
-      tags: ['#mindfulness', '#confidence', '#CBT'],
+      tags: [
+        '#mindfulness',
+        '#confidence',
+        '#CBT',
+        '#emotional-support',
+        '#calm',
+        '#mental-wellness',
+      ],
     },
     {
       service: 'Trauma',
       infomation:
         'Healing from trauma takes time, compassion, and a sense of safety. Whether it stems from childhood experiences, loss, abuse, or other life-altering events, trauma can deeply impact the nervous system and self-worth. At Brave Guidance, we provide a safe, judgment-free environment where individuals can begin to process and release pain. Our trauma-informed approach focuses on resilience, self-compassion, and reconnection to one’s inner strength.',
-      tags: ['#trauma-informed', '#resilience', '#self-compassion'],
+      tags: [
+        '#trauma-informed',
+        '#resilience',
+        '#self-compassion',
+        '#healing-space',
+        '#inner-strength',
+        '#nervous-system',
+      ],
     },
   ]
 
@@ -50,7 +71,7 @@ const Services = () => {
                   {item.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="bg-white/20 text-white text-xs font-medium px-2 py-1 rounded-full"
+                      className="bg-white/20 text-white text-xs font-medium px-2 py-1 rounded-full transition-all duration-300 hover:bg-white/30 hover:scale-105 cursor-pointer"
                     >
                       {tag}
                     </span>
