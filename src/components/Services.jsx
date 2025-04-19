@@ -45,7 +45,7 @@ const Services = () => {
 
   return (
     <section className="py-14 px-6 w-11/12 mx-auto relative">
-      <h2 className="text-4xl text-white font-bold text-center mb-10">What We Treat</h2>
+      <h2 className="text-4xl text-white font-bold text-center mb-10">Most Commonly Treated</h2>
 
       {/* Arrows for phones only */}
       <button

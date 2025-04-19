@@ -19,13 +19,13 @@ const AboutMe = () => {
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold text-accent-darker-green mb-4">About Me</h1>
           <div className='credentials mb-5'>
-          <h2 className='text-md font-bold text-accent-darker-green'>Collge:</h2>
+          <h2 className='text-md font-bold text-accent-darker-green'>College:</h2>
           <p>New York State</p>
           <h2 className='text-md font-bold text-accent-darker-green'>Years Of Experience:</h2>
           <p>5 Years of Experience</p>
           <h2 className='text-md font-bold text-accent-darker-green'>Insurance Accepted:</h2>
           <p>Blue Cross, Aetna, Optna and More</p>
-          <h2 className='text-md font-bold text-accent-darker-green'>Types of Therapy:</h2>
+          <h2 className='text-md font-bold text-accent-darker-green'>Modalities:</h2>
           <p>Occupational Therapy</p>
           </div>
           <p className="text-md text-gray-700 leading-relaxed">
