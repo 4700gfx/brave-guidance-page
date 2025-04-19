@@ -3,6 +3,8 @@ import insurance1 from '../assets/images/insurance1.png'
 import insurance2 from '../assets/images/insurance2.png'
 import insurance3 from '../assets/images/insurance3.png'
 import insurance4 from '../assets/images/insurance4.png'
+import insurance5 from '../assets/images/insurance5.png'
+import insurance6 from '../assets/images/insurance6.png'
 
 const InsuranceDisplay = () => {
   const messages = [
@@ -12,7 +14,7 @@ const InsuranceDisplay = () => {
     },
     {
       header: "Insurance Accepted",
-      textImage: [insurance1, insurance2, insurance3, insurance4]
+      textImage: [insurance1, insurance2, insurance3, insurance4, insurance5, insurance6]
     },
     {
       header: "Have More Questions?",
@@ -57,12 +59,16 @@ const InsuranceDisplay = () => {
           {Array.isArray(currentMessage.textImage) ? (
             <div className='flex justify-center items-center gap-4 sm:gap-6 flex-wrap'>
               {currentMessage.textImage.map((img, index) => (
-                <img
+                <div
                   key={index}
-                  src={img}
-                  alt={`insurance-${index}`}
-                  className='h-16 sm:h-20 md:h-24 object-contain'
-                />
+                  className="w-28 h-16 sm:w-32 sm:h-20 md:w-36 md:h-24 flex justify-center items-center bg-white p-2"
+                >
+                  <img
+                    src={img}
+                    alt={`insurance-${index}`}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               ))}
             </div>
           ) : (

@@ -10,29 +10,30 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Main Website</h4>
             <ul className="space-y-2 text-sm text-bold">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/about" className="hover:underline">About Me</a></li>
-              <li><a href="/services" className="hover:underline">What We Treat</a></li>
+              <li><a href="#Hero" className="hover:underline">Home</a></li>
+              <li><a href="#AboutMe" className="hover:underline">About Me</a></li>
+              <li><a href="#Services" className="hover:underline">What We Treat</a></li>
             </ul>
           </div>
 
           {/* Column 2 - Types of Properties */}
           <div>
-            <h4 className="text-lg font-semibold mb-4"> What We Treat</h4>
+            <h4 className="text-lg font-semibold mb-4">What We Treat</h4>
             <ul className="space-y-2 text-sm text-bold">
-              <li><a href="#" className="hover:underline">Depression</a></li>
-              <li><a href="#" className="hover:underline">Anixety</a></li>
-              <li><a href="#" className="hover:underline">Trauma</a></li>
+              <li><a href="#Services" className="hover:underline">Depression</a></li>
+              <li><a href="#Services" className="hover:underline">Anxiety</a></li>
+              <li><a href="#Services" className="hover:underline">Trauma</a></li>
+              <li><a href="#Services" className="hover:underline">Couples & Family Therapy</a></li>
             </ul>
           </div>
 
-          {/* Column 3 - About Me */}
+          {/* Column 3 - More From Me */}
           <div>
             <h4 className="text-lg font-semibold mb-4">More From Me</h4>
             <ul className="space-y-2 text-sm text-bold">
-              <li><a href="#" className="hover:underline">Booking Site</a></li>
-              <li><a href="#" className="hover:underline">Contact Me</a></li>
-              <li><a href="/faq" className="hover:underline">Accepted Insurance</a></li>
+              <li><a href="https://secure.helloalma.com/providers/sylvia-dowers/" target="_blank" rel="noopener noreferrer" className="hover:underline">Booking Site</a></li>
+              <li><a href="#ContactMe" className="hover:underline">Contact Me</a></li>
+              <li><a href="#Insurance" className="hover:underline">Accepted Insurance</a></li>
             </ul>
           </div>
 

@@ -7,6 +7,7 @@ import Faq from './components/Questions'
 import ContactMe from './components/ContactMe'
 import Footer from './components/Footer'
 import InsuranceDisplay from './components/InsuranceDisplay'
+import Quote1 from './components/Quote1'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Hero></Hero>
     <InsuranceDisplay></InsuranceDisplay>
     <AboutMe></AboutMe>
+    <Quote1></Quote1>
     <Services></Services>
     <Faq></Faq>
     <ContactMe></ContactMe>

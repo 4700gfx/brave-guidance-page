@@ -38,7 +38,7 @@ const ContactMe = () => {
 
           <form
             className="w-full mt-6 px-2 sm:px-0 max-w-xl mx-auto"
-            action="https://formspree.io/f/yourFormID" // Replace with your actual Formspree ID
+            action="https://formspree.io/f/yourFormID" // Replace with your FormSpree ID
             method="POST"
           >
             <div className="mb-4 text-left">
@@ -58,7 +58,7 @@ const ContactMe = () => {
               <input
                 type="email"
                 id="email"
-                name="_replyto"
+                name="_replyto" // This will ensure the reply email goes to the correct address
                 placeholder="Your Email"
                 required
                 className="w-full bg-white p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-1"
