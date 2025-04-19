@@ -6,15 +6,19 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigationTabs = {
-    home: "Home",
-    aboutMe: "About Me",
-    whatWeTreat: "What We Treat",
-    faq: "FAQ",
-    contactMe: "Contact Me"
+    home: { label: "Home", id: "Hero" },
+    aboutMe: { label: "About Me", id: "AboutMe" },
+    whatWeTreat: { label: "Most Commonly Treated", id: "Services" },
+    faq: { label: "FAQ", id: "Questions" },
+    contactMe: { label: "Contact Me", id: "ContactMe" }
   };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -38,18 +42,23 @@ const Navbar = () => {
         {/* Nav + Button - desktop */}
         <div className="hidden md:flex items-center gap-6">
           <ul className="flex gap-6 mr-20">
-            {Object.entries(navigationTabs).map(([key, label]) => (
+            {Object.entries(navigationTabs).map(([key, { label, id }]) => (
               <li
                 key={key}
                 className="font-bold text-md text-primary-black hover:text-primary-black hover:bg-primary-white px-3 py-2 rounded-xl transition-colors duration-300 cursor-pointer"
               >
-                {label}
+                <a href={`#${id}`}>{label}</a>
               </li>
             ))}
           </ul>
-          <button className="bg-primary-black text-primary-white px-6 py-2 rounded-xl transition-all duration-300 hover:bg-opacity-90 hover:scale-105 hover:shadow-lg">
+          <a
+            href="https://secure.helloalma.com/providers/sylvia-dowers/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary-black text-primary-white px-6 py-2 rounded-xl transition-all duration-300 hover:bg-opacity-90 hover:scale-105 hover:shadow-lg"
+          >
             Book Me!
-          </button>
+          </a>
         </div>
       </nav>
 
@@ -57,18 +66,23 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden px-6 pb-4">
           <ul className="flex flex-col gap-4">
-            {Object.entries(navigationTabs).map(([key, label]) => (
+            {Object.entries(navigationTabs).map(([key, { label, id }]) => (
               <li
                 key={key}
                 className="font-bold text-md text-primary-black hover:bg-primary-white px-3 py-2 rounded-xl transition-colors duration-300 cursor-pointer"
               >
-                {label}
+                <a href={`#${id}`} onClick={closeMenu}>{label}</a>
               </li>
             ))}
           </ul>
-          <button className="mt-4 bg-primary-black text-primary-white w-full py-2 rounded-xl transition-all duration-300 hover:bg-opacity-90 hover:scale-105 hover:shadow-lg">
+          <a
+            href="https://secure.helloalma.com/providers/sylvia-dowers/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 bg-primary-black text-primary-white w-full text-center py-2 rounded-xl transition-all duration-300 hover:bg-opacity-90 hover:scale-105 hover:shadow-lg block"
+          >
             Book Me!
-          </button>
+          </a>
         </div>
       )}
     </header>

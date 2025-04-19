@@ -2,7 +2,7 @@ import heroVid from '../assets/green-waterfall.mp4';
 
 const Hero = () => {
   return (
-    <section className="relative mx-auto my-10 w-11/12 h-[60vh] sm:h-[50vh] md:h-[60vh] overflow-hidden rounded-3xl">
+    <section className="relative mx-auto my-10 w-11/12 h-[60vh] sm:h-[50vh] md:h-[60vh] overflow-hidden rounded-3xl" id='Hero'>
       
       {/* Video background */}
       <video

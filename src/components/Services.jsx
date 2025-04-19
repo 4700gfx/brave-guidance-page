@@ -44,7 +44,7 @@ const Services = () => {
   };
 
   return (
-    <section className="py-14 px-6 w-11/12 mx-auto relative">
+    <section className="py-14 px-6 w-11/12 mx-auto relative" id='Services'>
       <h2 className="text-4xl text-white font-bold text-center mb-10">Most Commonly Treated</h2>
 
       {/* Arrows for phones only */}
@@ -110,9 +110,14 @@ const Card = ({ item }) => (
           ))}
         </div>
       </div>
-      <button className="mt-4 bg-black hover:bg-green-600 transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-lg self-start transform hover:-translate-y-1">
+      <a
+        href="https://secure.helloalma.com/providers/sylvia-dowers/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 bg-black hover:bg-green-600 transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-lg self-start transform hover:-translate-y-1"
+      >
         Learn More
-      </button>
+      </a>
     </div>
   </div>
 );

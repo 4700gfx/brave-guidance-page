@@ -39,7 +39,7 @@ const InsuranceDisplay = () => {
   const currentMessage = messages[currentIndex]
 
   return (
-    <section className='w-full px-4 py-8'>
+    <section className='w-full px-4 py-8' id='Insurance'>
       <div className='bg-white w-full max-w-5xl mx-auto rounded-2xl shadow-md flex flex-col justify-center items-center px-6 py-10 md:px-10 transition-all duration-500 ease-in-out'>
         <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-accent-darker-green text-center mb-8'>
           Insurance & Out Of Pocket Cost

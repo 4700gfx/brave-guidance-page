@@ -26,7 +26,7 @@ const Faq = () => {
   ]
 
   return (
-    <section className="w-full px-4 sm:px-6 py-12">
+    <section className="w-full px-4 sm:px-6 py-12" id='Questions'>
       <div className="max-w-5xl mx-auto space-y-6">
         <h2 className="text-white text-3xl sm:text-4xl font-bold text-center">FAQs</h2>
         <p className="text-white text-center text-base sm:text-lg max-w-3xl mx-auto">

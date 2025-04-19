@@ -3,7 +3,7 @@ import sylvia from '../assets/images/sylvia-dowers.jpg';
 
 const AboutMe = () => {
   return (
-    <section className="w-11/12 mx-auto my-12">
+    <section className="w-11/12 mx-auto my-12" id='AboutMe'>
       <div className="bg-primary-white rounded-2xl p-8 flex flex-col md:flex-row items-center shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
         
         {/* Image Section */}
