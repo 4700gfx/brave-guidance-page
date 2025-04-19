@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import servicePlant from '../assets/service-plant.jpg';
-import '../index.css'; // Make sure to import your global stylesheet
+import '../index.css';
 
 const Services = () => {
-  const scrollRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const servicesInfo = [
     {
@@ -33,14 +33,13 @@ const Services = () => {
     },
   ];
 
-  const scroll = (direction) => {
-    const container = scrollRef.current;
-    if (!container) return;
-    const scrollAmount = 300;
-
-    container.scrollBy({
-      left: direction === 'left' ? -scrollAmount : scrollAmount,
-      behavior: 'smooth',
+  const handleScroll = (direction) => {
+    setCurrentIndex((prevIndex) => {
+      if (direction === 'left') {
+        return prevIndex === 0 ? servicesInfo.length - 1 : prevIndex - 1;
+      } else {
+        return prevIndex === servicesInfo.length - 1 ? 0 : prevIndex + 1;
+      }
     });
   };
 
@@ -48,64 +47,74 @@ const Services = () => {
     <section className="py-14 px-6 w-11/12 mx-auto relative">
       <h2 className="text-4xl text-white font-bold text-center mb-10">What We Treat</h2>
 
-      {/* Arrows */}
+      {/* Arrows for phones only */}
       <button
-        onClick={() => scroll('left')}
-        className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-black text-white p-2 rounded-full"
+        onClick={() => handleScroll('left')}
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-black text-white p-2 rounded-full sm:hidden"
       >
         <ChevronLeft size={24} />
       </button>
       <button
-        onClick={() => scroll('right')}
-        className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-black text-white p-2 rounded-full"
+        onClick={() => handleScroll('right')}
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-black text-white p-2 rounded-full sm:hidden"
       >
         <ChevronRight size={24} />
       </button>
 
-      {/* Scrollable Cards */}
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-x-auto scroll-smooth px-2 hide-scrollbar"
-      >
-        {servicesInfo.map((item, index) => (
-          <div
-            key={index}
-            className="min-w-[280px] sm:min-w-[300px] md:min-w-[360px] h-[26rem] sm:h-[28rem] rounded-xl overflow-hidden shadow-lg group transition-transform duration-300 ease-in-out transform  hover:shadow-xl"
-            style={{
-              backgroundImage: `url(${servicePlant})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition duration-300" />
+      {/* Phone View: Carousel */}
+      <div className="flex justify-center sm:hidden">
+        <Card item={servicesInfo[currentIndex]} />
+      </div>
 
-            {/* Content */}
-            <div className="relative z-10 text-white p-6 flex flex-col h-full justify-between">
-              <div className="overflow-hidden">
-                <h3 className="text-2xl font-bold mb-2">{item.service}</h3>
-                <p className="text-sm leading-relaxed mb-3">{item.infomation}</p>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {item.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="bg-white/20 text-white text-xs font-medium px-2 py-1 rounded-full transition-all duration-300 hover:bg-white/30 hover:scale-105 cursor-pointer"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <button className="mt-4 bg-black hover:bg-green-600 transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-lg self-start transform hover:-translate-y-1">
-                Learn More
-              </button>
-            </div>
-          </div>
+      {/* Tablet View: 1 Column */}
+      <div className="hidden sm:flex lg:hidden flex-col items-center gap-6">
+        {servicesInfo.map((item, index) => (
+          <Card key={index} item={item} />
+        ))}
+      </div>
+
+      {/* Desktop View: 4 Column Row */}
+      <div className="hidden lg:grid lg:grid-cols-4 gap-6">
+        {servicesInfo.map((item, index) => (
+          <Card key={index} item={item} />
         ))}
       </div>
     </section>
   );
 };
+
+// Reusable Card component
+const Card = ({ item }) => (
+  <div
+    className="relative w-full h-[28rem] rounded-xl overflow-hidden shadow-lg group transition-transform duration-300 ease-in-out transform hover:shadow-xl"
+    style={{
+      backgroundImage: `url(${servicePlant})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+  >
+    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition duration-300" />
+    <div className="relative z-10 text-white p-6 flex flex-col h-full justify-between">
+      <div className="overflow-hidden">
+        <h3 className="text-2xl font-bold mb-2">{item.service}</h3>
+        <p className="text-sm leading-relaxed mb-3">{item.infomation}</p>
+        <div className="flex flex-wrap gap-2 mt-2">
+          {item.tags.map((tag, i) => (
+            <span
+              key={i}
+              className="bg-white/20 text-white text-xs font-medium px-2 py-1 rounded-full transition-all duration-300 hover:bg-white/30 hover:scale-105 cursor-pointer"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+      <button className="mt-4 bg-black hover:bg-green-600 transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-lg self-start transform hover:-translate-y-1">
+        Learn More
+      </button>
+    </div>
+  </div>
+);
 
 export default Services;
