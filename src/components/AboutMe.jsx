@@ -26,7 +26,7 @@ const AboutMe = () => {
           <h2 className='text-md font-bold text-accent-darker-green'>Insurance Accepted:</h2>
           <p>Blue Cross, Aetna, Optna and More</p>
           <h2 className='text-md font-bold text-accent-darker-green'>Modalities:</h2>
-          <p>Occupational Therapy</p>
+          <p className='font-italic'>Occupational Therapy, Cognitive Behavioral Therapy (CBT), Psychodynamic Therapy</p>
           </div>
           <p className="text-md text-gray-700 leading-relaxed">
           Working with individuals within the criminal justice system along with my own life experiences initially led me to the field of mental health. As I searched for answers to questions surrounding the impact of trauma, I realized the work had to start with me. Despite the stigmas and challenges, I decided to change the narrative and give back to my community. Obtaining the knowledge and understanding of the field included me doing my own personal work in therapy. I fell in love with the experience of processing and challenging beliefs driven by fear. I am truly passionate about growth and evolving as a person. I believe having compassion for yourself helps overcome the barriers that stand firmly in your path.
