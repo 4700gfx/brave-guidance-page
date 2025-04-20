@@ -32,9 +32,14 @@ const Hero = () => {
           we help you strengthen self-awareness, embrace change, and move forward with clarity.
         </p>
 
-        <button className="mt-4 bg-black text-white px-6 py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 hover:bg-white hover:text-black hover:shadow-md">
-          Start Now
-        </button>
+        <a
+            href="https://secure.helloalma.com/providers/sylvia-dowers/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary-black text-primary-white mt-5 px-8 py-2 rounded-xl transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 hover:shadow-lg"
+          >
+            Start Now
+          </a>
       </div>
     </section>
   );
