@@ -28,8 +28,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-primary-white max-w-xl text-base sm:text-md font-light leading-relaxed text-center">
-          At Brave Guidance, we believe healing begins with connection. Through a holistic and compassionate approach,
-          we help you strengthen self-awareness, embrace change, and move forward with clarity.
+        At Brave Guidance, we believe healing begins with safety and connection. Through a holistic and compassionate approach, we help you strengthen self-awareness, embrace change, and move forward with clarity and compassion
         </p>
 
         <a

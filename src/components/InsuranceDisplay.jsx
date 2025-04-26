@@ -10,7 +10,7 @@ const InsuranceDisplay = () => {
   const messages = [
     {
       header: "Out of Pocket/Sliding Scale",
-      textImage: "$125 - $250"
+      textImage: "$125 - $250, Sliding scale available upon request"
     },
     {
       header: "Insurance Accepted",
@@ -19,7 +19,7 @@ const InsuranceDisplay = () => {
     {
       header: "Have More Questions?",
       textImage:
-        "If you have any additional questions pertaining to your current insurance plan and how it applies to your co-pay cost, kindly fill out the Contact Me Form and I will be able to assist with any of your questions."
+        "If you have any additional questions pertaining to your current insurance plan and your co-pay cost, kindly fill out the Contact Me Form and I will be able to assist with any of your questions."
     }
   ]
 
