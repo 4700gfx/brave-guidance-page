@@ -17,7 +17,7 @@ const Services = () => {
       service: 'Anxiety',
       infomation:
         'Anxiety can be overwhelming, often manifesting as restlessness, racing thoughts, and physical tension. Brave Guidance offers structured, supportive care to help individuals break the cycle of fear and avoidance. Through mindfulness techniques, cognitive behavioral tools, and personalized guidance, we help clients understand the underlying patterns of anxiety and empower them to reclaim a sense of calm, control, and confidence.',
-      tags: ['#mindfulness', '#confidence', '#CBT', '#emotional-support', '#calm', '#mental-wellness, #emotion-intelligence'],
+      tags: ['#mindfulness', '#confidence', '#CBT', '#emotional-support', '#calm', '#mental-wellness', '#emotion-intelligence'],
     },
     {
       service: 'Trauma',
