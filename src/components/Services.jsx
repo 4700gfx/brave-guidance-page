@@ -23,7 +23,7 @@ const Services = () => {
       service: 'Trauma',
       infomation:
         'Healing from trauma takes time, compassion, and a sense of safety. Whether it stems from childhood experiences, loss, abuse, or other life-altering events, trauma can deeply impact the nervous system and self-worth. At Brave Guidance, we provide a safe, judgment-free environment where individuals can begin to process and release pain. Our trauma-informed approach focuses on resilience, self-compassion, and reconnection to one’s inner strength.',
-      tags: ['#trauma-informed', '#resilience', '#self-compassion', '#healing-space', '#inner-strength', '#nervous-system', '#inner-resourcing'],
+      tags: ['#trauma-informed', '#resilience', '#self-compassion', '#healing-space', '#inner-strength', '#nervous-system', '#inner-resources', '#safety'],
     },
     {
       service: 'Couple & Family Therapy',
