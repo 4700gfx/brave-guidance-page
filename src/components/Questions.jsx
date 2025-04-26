@@ -21,7 +21,7 @@ const Faq = () => {
     {
       question: 'How do I get started?',
       answer:
-        'The first step is scheduling a 15 minute session to asses is BGC is a good fit  this includes exploring presenting concerns, scheduling, etc',
+        'The first step is scheduling a 15 minute session to assess if BGCS is a good fit for you. This includes exploring presenting concerns, scheduling, etc. For consultations longer than 15 mintues, a booking fee of $25 will apply.',
     },
   ]
 
