@@ -17,7 +17,7 @@ const AboutMe = () => {
 
         {/* Text Section */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-accent-darker-green">About Me</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-accent-darker-green">Meet Sylvia</h1>
           
           <div className='credentials space-y-3'>
             <div>
