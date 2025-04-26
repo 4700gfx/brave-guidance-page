@@ -110,14 +110,6 @@ const Card = ({ item }) => (
           ))}
         </div>
       </div>
-      <a
-        href="https://secure.helloalma.com/providers/sylvia-dowers/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-4 bg-black hover:bg-green-600 transition-all duration-300 ease-in-out text-white py-2 px-4 rounded-lg self-start transform hover:-translate-y-1"
-      >
-        Learn More
-      </a>
     </div>
   </div>
 );
