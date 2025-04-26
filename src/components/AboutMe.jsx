@@ -4,43 +4,43 @@ import logo from '../assets/images/brave-guidance-trans.png';
 
 const AboutMe = () => {
   return (
-    <section className="w-11/12 mx-auto my-8 md:my-12" id='AboutMe'>
+    <section className="w-11/12 mx-auto my-8 md:my-12" id="AboutMe">
 
       {/* About BGCS Section */}
-      <div className="bg-primary-white rounded-2xl w-1/3 p-4 md:p-8 flex flex-col mx-auto shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out gap-6">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <h1 className="text-3xl md:text-5xl font-bold text-accent-darker-green">About BGCS</h1>
-          <img 
-            src={logo} 
-            alt="Brave Guidance Counseling Service Logo" 
-            className="w-28 md:w-36 mt-4 md:mt-0"
+      <div className="bg-primary-white rounded-2xl w-full md:w-2/3 lg:w-1/2 p-4 md:p-8 flex flex-col mx-auto shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-accent-darker-green text-center md:text-left">About BGCS</h1>
+          <img
+            src={logo}
+            alt="Brave Guidance Counseling Service Logo"
+            className="w-24 md:w-36 mt-4 md:mt-0"
           />
         </div>
 
-        <div className='credentials space-y-3 mt-6'>
+        <div className="credentials space-y-4 mt-6">
           <div>
-            <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Years Of Experience:</h2>
-            <p className='text-base md:text-lg'>Over 10+ Years of Experience</p>
+            <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Years Of Experience:</h2>
+            <p className="text-base md:text-lg">Over 10+ Years of Experience</p>
           </div>
 
           <div>
-            <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Therapeutic Approaches:</h2>
-            <p className='text-base md:text-lg'>Client-Centered Therapy, Cognitive Behavior Therapy, EMDR, Gottman Method, Solution Focus Therapy & Trauma Informed Therapy</p>
+            <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Therapeutic Approaches:</h2>
+            <p className="text-base md:text-lg">Client-Centered Therapy, Cognitive Behavior Therapy, EMDR, Gottman Method, Solution Focus Therapy & Trauma Informed Therapy</p>
           </div>
 
           <div>
-            <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Treatment Specialization Includes:</h2>
-            <p className='text-base md:text-lg'>Individual, Couples, Life Transitions, Coaching, Anxiety, Depression, General Relationship Challenges, General Mental Health, Marriage and Partnerships, Trauma and Post-traumatic Stress Disorder (PTSD)</p>
+            <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Treatment Specialization Includes:</h2>
+            <p className="text-base md:text-lg">Individual, Couples, Life Transitions, Coaching, Anxiety, Depression, General Relationship Challenges, General Mental Health, Marriage and Partnerships, Trauma and Post-traumatic Stress Disorder (PTSD)</p>
           </div>
 
           <div>
-            <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Insurance Accepted:</h2>
-            <p className='text-base md:text-lg'>Empire BCBS, Aetna, Cigna, Optum (UnitedHealthCare, Oscar, Oxford, UMR)</p>
+            <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Insurance Accepted:</h2>
+            <p className="text-base md:text-lg">Empire BCBS, Aetna, Cigna, Optum (UnitedHealthCare, Oscar, Oxford, UMR)</p>
           </div>
 
-          <div className='mb-2'>
-            <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Locations:</h2>
-            <p className='text-base md:text-lg'>FL, NY - Virtual</p>
+          <div className="mb-2">
+            <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Locations:</h2>
+            <p className="text-base md:text-lg">FL, NY - Virtual</p>
           </div>
         </div>
       </div>
@@ -51,9 +51,9 @@ const AboutMe = () => {
           
           {/* Image */}
           <div className="w-full md:w-1/2 flex justify-center">
-            <img 
-              src={sylvia} 
-              alt="Sylvia Dowers" 
+            <img
+              src={sylvia}
+              alt="Sylvia Dowers"
               className="rounded-2xl w-full max-w-xs md:max-w-md object-cover hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-lg"
             />
           </div>
