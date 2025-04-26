@@ -17,14 +17,9 @@ const AboutMe = () => {
 
         {/* Text Section */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-accent-darker-green">Meet Sylvia</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-accent-darker-green">About BGCS</h1>
           
           <div className='credentials space-y-3'>
-            <div>
-              <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>College:</h2>
-              <p className='text-base md:text-lg'>New York State</p>
-            </div>
-
             <div>
               <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Years Of Experience:</h2>
               <p className='text-base md:text-lg'>Over 10+ Years of Experience</p>
@@ -32,20 +27,13 @@ const AboutMe = () => {
 
             <div>
               <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Therapeutic Approaches:</h2>
-              <p className='text-base md:text-lg'>Client-Centered Therapy, CBT, EMDR, Gottman Method, & Trauma Informed <br></br>
+              <p className='text-base md:text-lg'>Client-Centered Therapy, Cognitive Behavior Therapy, EMDR, Gottman Method, Solution Focus Therapy & Trauma Informed Therapy <br></br>
               </p>
             </div>
 
             <div>
               <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Treatment Specialization Includes:</h2>
-              <p className='text-base md:text-lg'>Individual, Couples, Life Transitions, Trauma, PTSD, Coaching, Anxiety, Depression, General Relationship challenges, General Mental Health</p>
-              <br></br>
-              <p className='text-base md:text-lg'>Marriage and Partnerships, Trauma and Post-traumatic Stress Disorder (PTSD)</p>
-            </div>
-
-            <div>
-              <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Modalities:</h2>
-              <p className='text-base md:text-lg'>Occupational Therapy, CBT, Psychodynamic Therapy</p>
+              <p className='text-base md:text-lg'>Individual, Couples, Life Transitions, Coaching, Anxiety, Depression, General Relationship Challenges, General Mental Health, Marriage and Partnerships, Trauma and Post-traumatic Stress Disorder (PTSD)</p>
             </div>
 
             <div>
@@ -53,11 +41,13 @@ const AboutMe = () => {
               <p className='text-base md:text-lg'>Empire BCBS, Aetna, Cigna, Optum (UnitedHealthCare, Oscar, Oxford, UMR)</p>
             </div>
 
-            <div>
+            <div className='mb-2'>
               <h2 className='text-lg md:text-xl font-semibold text-accent-darker-green'>Locations:</h2>
               <p className='text-base md:text-lg'>FL, NY - Virtual</p>
             </div>
           </div>
+
+          <h1 className="text-3xl md:text-5xl font-bold text-accent-darker-green">Meet Sylvia</h1>
 
           <p className="text-base md:text-lg text-gray-700 leading-relaxed">
           Sylvia N Dowers, LMHC, QS owner and operator of Brave Guidance Counseling Service. Sylvia obtained her Bachelors of Arts Degree in Criminal Justice minor in Forensic Psychology from Long Island University- CW Post and her Masters of Science in Mental Health Counseling from Long Island University- Brooklyn. She furthered her education in Trauma Studies from the  Institute for Contemporary Psychotherapy and is currently pursuing additional training and certification in Clinical Sexology from the Modern Sex Therapy Institutes. 
