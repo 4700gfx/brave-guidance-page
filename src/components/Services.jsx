@@ -17,19 +17,19 @@ const Services = () => {
       service: 'Anxiety',
       infomation:
         'Anxiety can be overwhelming, often manifesting as restlessness, racing thoughts, and physical tension. Brave Guidance offers structured, supportive care to help individuals break the cycle of fear and avoidance. Through mindfulness techniques, cognitive behavioral tools, and personalized guidance, we help clients understand the underlying patterns of anxiety and empower them to reclaim a sense of calm, control, and confidence.',
-      tags: ['#mindfulness', '#confidence', '#CBT', '#emotional-support', '#calm', '#mental-wellness'],
+      tags: ['#mindfulness', '#confidence', '#CBT', '#emotional-support', '#calm', '#mental-wellness, #emotion-intelligence'],
     },
     {
       service: 'Trauma',
       infomation:
         'Healing from trauma takes time, compassion, and a sense of safety. Whether it stems from childhood experiences, loss, abuse, or other life-altering events, trauma can deeply impact the nervous system and self-worth. At Brave Guidance, we provide a safe, judgment-free environment where individuals can begin to process and release pain. Our trauma-informed approach focuses on resilience, self-compassion, and reconnection to one’s inner strength.',
-      tags: ['#trauma-informed', '#resilience', '#self-compassion', '#healing-space', '#inner-strength', '#nervous-system'],
+      tags: ['#trauma-informed', '#resilience', '#self-compassion', '#healing-space', '#inner-strength', '#nervous-system', '#inner-resourcing'],
     },
     {
       service: 'Couple & Family Therapy',
       infomation:
         'At Brave Guidance, we believe that strong relationships are the foundation of a fulfilling life. Our Couples and Family Therapy services are designed to help you navigate challenges, deepen your connections, and build lasting harmony within your relationships. We provide a safe and nonjudgmental space where everyone can feel heard, understood, and empowered to grow—together.',
-      tags: ['#relationship-healing', '#family-therapy', '#stronger-together', '#couples-therapy', '#healthy-communication', '#emotional-wellness'],
+      tags: ['#trauma-informed', '#resilience', '#self-compassion', '#healing-space', '#inner-strength', '#unity', '#partnership' ],
     },
   ];
 

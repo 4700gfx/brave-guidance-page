@@ -19,9 +19,9 @@ const Faq = () => {
         'I am most excited about the changes and views of mental health within communities of color and the accessibility of therapy. Mental health has evolved tremendously due to circumstances beyond our control (including Covid-19). Telehealth has provided many with the access to a professional without the hustle and bustle of commuting while simultaneously normalizing the process of seeking therapy through an online portal.',
     },
     {
-      question: 'What was your path to becoming a therapist?',
+      question: 'How do I get started?',
       answer:
-        'Working with individuals within the criminal justice system along with my own life experiences initially led me to the field of mental health. As I searched for answers to questions surrounding the impact of trauma, I realized the work had to start with me. Despite the stigmas and challenges, I decided to change the narrative and give back to my community. Obtaining the knowledge and understanding of the field included me doing my own personal work in therapy. I fell in love with the experience of processing and challenging beliefs driven by fear. I am truly passionate about growth and evolving as a person. I believe having compassion for yourself helps overcome the barriers that stand firmly in your path.',
+        'The first step is scheduling a 15 minute session to asses is BGC is a good fit  this includes exploring presenting concerns, scheduling, etc',
     },
   ]
 
