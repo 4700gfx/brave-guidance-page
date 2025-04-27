@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
-import contactPic from '../assets/images/contact-me-pic.jpg'
 import { motion } from 'framer-motion'
+import contactPic from '../assets/images/contact-me-pic.jpg'
 
 const ContactMe = () => {
   const [status, setStatus] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const form = e.target
-    const data = new FormData(form)
+    const { target } = e
+    const data = new FormData(target)
 
     try {
-      const response = await fetch('https://formspree.io/f/yourFormID', {
+      const response = await fetch('https://formspree.io/f/myzwzvnj', {
         method: 'POST',
         body: data,
         headers: {
@@ -21,12 +21,13 @@ const ContactMe = () => {
 
       if (response.ok) {
         setStatus('SUCCESS')
-        form.reset()
+        target.reset()
       } else {
         alert('Something went wrong. Please try again.')
       }
     } catch (error) {
-      alert('There was an error submitting the form.')
+      console.error('Form submission error:', error)
+      alert('Unable to send message. Please try again later.')
     }
   }
 
