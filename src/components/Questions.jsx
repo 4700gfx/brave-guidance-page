@@ -16,7 +16,7 @@ const Faq = () => {
     {
       question: 'What are you most excited about within the evolving mental health landscape?',
       answer:
-        'I am most excited about the changes and views of mental health within communities of color and the accessibility of therapy. Mental health has evolved tremendously due to circumstances beyond our control (including Covid-19). Telehealth has provided many with the access to a professional without the hustle and bustle of commuting while simultaneously normalizing the process of seeking therapy through an online portal.',
+        'I am most excited about the changes and views of mental health within communities of color and the accessibility of therapy. Mental health has evolved tremendously due to circumstances beyond our control (including COVID-19). Telehealth has provided many with the access to a professional without the hustle and bustle of commuting while simultaneously normalizing the process of seeking therapy through an online portal.',
     },
     {
       question: 'How do I get started?',

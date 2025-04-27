@@ -58,7 +58,7 @@ const AboutMe = () => {
 
           <div className="mb-2">
             <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Locations:</h2>
-            <p className="text-base md:text-lg">FL, NY - Virtual</p>
+            <p className="text-base md:text-lg">FL & NY - Virtual</p>
           </div>
         </div>
       </div>

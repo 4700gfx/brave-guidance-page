@@ -10,7 +10,7 @@ const InsuranceDisplay = () => {
   const messages = [
     {
       header: "Out of Pocket/Sliding Scale",
-      textImage: "$125 - $250, Sliding scale available upon request"
+      textImage: "$125 - $250 | Sliding scale available upon request"
     },
     {
       header: "Insurance Accepted",
