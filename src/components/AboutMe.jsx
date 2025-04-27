@@ -25,12 +25,30 @@ const AboutMe = () => {
 
           <div>
             <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Therapeutic Approaches:</h2>
-            <p className="text-base md:text-lg">Client-Centered Therapy, Cognitive Behavior Therapy, EMDR, Gottman Method, Solution Focus Therapy & Trauma Informed Therapy</p>
+            <ul className="text-base md:text-md list-disc pl-5 grid grid-cols-1 md:grid-cols-2 gap-x-2">
+              <li>Client-Centered Therapy</li>
+              <li>Cognitive Behavior Therapy</li>
+              <li>EMDR</li>
+              <li>Gottman Method</li>
+              <li>Solution Focus Therapy</li>
+              <li>Trauma Informed Therapy</li>
+            </ul>
           </div>
 
           <div>
             <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Treatment Specialization Includes:</h2>
-            <p className="text-base md:text-lg">Individual, Couples, Life Transitions, Coaching, Anxiety, Depression, General Relationship Challenges, General Mental Health, Marriage and Partnerships, Trauma and Post-traumatic Stress Disorder (PTSD)</p>
+            <ul className="text-base md:text-md list-disc pl-5 grid grid-cols-1 md:grid-cols-2 gap-x-2">
+              <li>Individual</li>
+              <li>Couples</li>
+              <li>Life Transitions</li>
+              <li>Coaching</li>
+              <li>Anxiety</li>
+              <li>Depression</li>
+              <li>General Relationship Challenges</li>
+              <li>General Mental Health</li>
+              <li>Marriage and Partnerships</li>
+              <li>Trauma and Post-traumatic Stress Disorder (PTSD)</li>
+            </ul>
           </div>
 
           <div>
