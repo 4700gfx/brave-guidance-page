@@ -94,7 +94,7 @@ const Card = ({ item }) => (
       backgroundRepeat: 'no-repeat',
     }}
   >
-    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition duration-300" />
+    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-300" />
     <div className="relative z-10 text-white p-6 flex flex-col h-full justify-between">
       <div className="overflow-hidden">
         <h3 className="text-2xl font-bold mb-2">{item.service}</h3>
