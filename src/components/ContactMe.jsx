@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import contactPic from '../assets/images/contact-me-pic.jpg'
-import { motion } from 'framer-motion'
 
 const ContactMe = () => {
   const [status, setStatus] = useState('')
@@ -11,7 +10,7 @@ const ContactMe = () => {
     const data = new FormData(form)
 
     try {
-      const response = await fetch('https://formspree.io/f/yourFormID', {
+      const response = await fetch('https://formspree.io/f/myzwzvnj', {
         method: 'POST',
         body: data,
         headers: {
@@ -27,6 +26,7 @@ const ContactMe = () => {
       }
     } catch (error) {
       alert('There was an error submitting the form.')
+      console.log(error)
     }
   }
 
