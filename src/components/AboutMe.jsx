@@ -54,11 +54,18 @@ const AboutMe = () => {
           <div>
             <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Insurance Accepted:</h2>
             <p className="text-base md:text-lg">Empire BCBS, Aetna, Cigna, Optum (UnitedHealthCare, Oscar, Oxford, UMR)</p>
+            <br></br>
+            <p className='font-semibold text-md'>
+              <strong>Note:</strong>
+              <br></br>
+              Insurance Coverage is not guaranteed in every state listed. Please verify with your insurer and discuss further during consultation.   
+            </p>
           </div>
 
           <div className="mb-2">
             <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Locations:</h2>
             <p className="text-base md:text-lg">FL & NY - Virtual</p>
+            <p className="text-base md:text-lg">Licensed Counselor, South Carolina TLC 2458</p>
           </div>
         </div>
       </div>
