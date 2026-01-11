@@ -48,6 +48,7 @@ const AboutMe = () => {
               <li>General Mental Health</li>
               <li>Marriage and Partnerships</li>
               <li>Trauma and Post-traumatic Stress Disorder (PTSD)</li>
+              <li>Sex and Intimacy Therapy</li>
             </ul>
           </div>
 
@@ -64,7 +65,7 @@ const AboutMe = () => {
 
           <div className="mb-2">
             <h2 className="text-lg md:text-xl font-semibold text-accent-darker-green">Locations:</h2>
-            <p className="text-base md:text-lg">FL & NY - Virtual</p>
+            <p className="text-base md:text-lg">Florida, New York, Idaho & South Carolina - Virtual</p>
             <p className="text-base md:text-lg">Licensed Counselor, South Carolina TLC 2458</p>
           </div>
         </div>
@@ -87,7 +88,7 @@ const AboutMe = () => {
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
             <h1 className="text-3xl md:text-5xl font-bold text-accent-darker-green">Meet Sylvia</h1>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Sylvia N Dowers, LMHC, QS owner and operator of Brave Guidance Counseling Service. Sylvia obtained her Bachelors of Arts Degree in Criminal Justice minor in Forensic Psychology from Long Island University- CW Post and her Masters of Science in Mental Health Counseling from Long Island University- Brooklyn. She furthered her education in Trauma Studies from the Institute for Contemporary Psychotherapy and is currently pursuing additional training and certification in Clinical Sexology from the Modern Sex Therapy Institutes.
+              Sylvia N Dowers, LMHC-QS owner and operator of Brave Guidance Counseling Service. Sylvia obtained her Bachelors of Arts Degree in Criminal Justice minor in Forensic Psychology from Long Island University- CW Post and her Masters of Science in Mental Health Counseling from Long Island University- Brooklyn. She furthered her education in Trauma Studies from the Institute for Contemporary Psychotherapy and is currently pursuing additional training and certification in Clinical Sexology from the Modern Sex Therapy Institutes.
               <br /><br />
               She began her journey as a psychotherapist working with individuals within underserved communities and the NYC criminal justice system. She noticed the difficulty and disconnect in services for those who struggle with their mental well-being. As she searched for answers to questions surrounding the impact of trauma, quickly realizing the work had to start with her. Sylvia fell in love with the experience of processing and challenging beliefs driven by fear. She is truly passionate about growth and evolving as a person, which includes learning to cultivate compassion for yourself to overcome the barriers that stand firmly in your path.
             </p>
